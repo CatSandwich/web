@@ -14,14 +14,26 @@
     <meta name="author" content="Joshua Torrington-Smith" />
 
     <style>
-        a{
-            color:#C0FFEE;
+        a {
+            color: #C0FFEE;
         }
     </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
 
 <body style="color: #C0FFEE; background-color: #121212">
+
+    <div id="sidenav">
+
+    </div>
+
+    <script>
+        $.get("navigation.html", function (data) {
+            $("#nav-placeholder").replaceWith(data);
+        });
+    </script>
 
     <h1>
         Joshua Torrington-Smith (alias CatSandwich)
